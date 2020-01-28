@@ -20,8 +20,9 @@ const App = () => {
           {/* <MovieList/>
         </Route> */}
         
-        <Route path="/movies/:id" component={Movie}/>
-        <Movie addToSavedList={addToSavedList}/>
+        <Route path="/movies/:id">
+          <Movie addToSavedList={addToSavedList}/>
+        </Route>
 
       </div>
     </div>
